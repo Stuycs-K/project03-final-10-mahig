@@ -2,11 +2,11 @@
 
 ## Group Members:
 
-names here.
+Golam Mahi
        
 # Intentions:
 
-A statement of the problem you are solving and/or a high level description of the project.
+A virus that opens a tab. It forks and duplicates whenever the tab is closed. It has allocated memory at two locations; if one location is detected to be closed, the other one reopens it.
     
 # Intended usage:
 
@@ -17,8 +17,8 @@ A description as to how the project will be used (describe the user interface).
 A description of your technical design. This should include:
    
 How you will be using the topics covered in class in the project.
-     
-How you are breaking down the project and who is responsible for which parts.
+
+Forking by reading the kill signal. Executing the command to open up a specific tab. Semaphores to communicate between the allocated memory.
   
 What data structures you will be using and how.
      
