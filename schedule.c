@@ -4,7 +4,7 @@
 
 
 char** readSchedule(){
-    char activities = calloc(LENGTH, sizeof(&char));
+    char** activities = calloc(LENGTH, sizeof(char activities*));
 
     int log = open(FILENAME, O_RDONLY, 0);
 
@@ -12,10 +12,15 @@ char** readSchedule(){
     perror("open");  
     exit(1);  
 }  
-for(int i = 0; i < LENGTH; i++){
-    int stopRead; 
-    
-    ssize_t readed = read(log, activities[i], )
+char *c;
+int i;
+while((ssize_t readed = read(log, c[i], i)) != 0) i++;
+
+int counter = 0;
+char *l;
+while((l = strsep(&c, " ")) != NULL){
+activities[counter] = l;
+counter++;
 }
     return activities;
 }
@@ -25,6 +30,7 @@ void calculateTime(){
 }
 
 void displaySchedule(){
-    printf("Entry Format : Activity, Time(24Hour)");
+    printf("%s", activities[1]);
+    printf("\nEntry Format : Activity, Time(24Hour)");
 }
 

@@ -4,6 +4,6 @@
 #include <fcntl.h>
 #include <time.h>
 
-void readSchedule();
+char** readSchedule();
 void calculateTime();
 void displaySchedule();
